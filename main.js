@@ -20,4 +20,5 @@ document.addEventListener('DOMContentLoaded', function(){
             seguindo.innerText = json.following;
             link.href = json.html_url;
         })
+        
 })
