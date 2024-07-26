@@ -25,7 +25,18 @@ header {
     background-color: var(--header-color);
     text-align: center;
     height: 30vh;
+
+    h3{
+        color: #eee;
+    }
+
+    input, button{
+        border-radius: 6px;
+        padding: 6px;
+    }
+
 }
+
 
 header .container {
     position: relative;
@@ -41,11 +52,13 @@ header .container {
 
 .profile-name {
     font-size: 2em;
+    font-weight: bold;
 }
 
 .profile-username {
     margin: 16px 0 32px;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .profile-link {
@@ -56,6 +69,10 @@ header .container {
     margin-top: 24px;
     text-decoration: none;
     border-radius: 6px;
+
+    &:hover{
+        color: #f1c32a;
+    }
 }
 
 .numbers {
