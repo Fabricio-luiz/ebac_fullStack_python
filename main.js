@@ -45,6 +45,7 @@ $(document).ready(function(){
                 return resposta.json();
             } 
             else {
+                $("#user").val("");
                 throw new Error('Usuário não encontrado');
             }
         })
