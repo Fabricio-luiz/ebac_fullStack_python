@@ -68,7 +68,8 @@ $(document).ready(function(){
             setTimeout(function(){
                 $(botao).find('i').removeClass('d-none');
                 $(botao).find('span').addClass('d-none');
-            }, 0.5);                
+                $("#user").val("");
+            }, 1000);                
         })
     })
 })
