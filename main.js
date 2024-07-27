@@ -41,7 +41,12 @@ $(document).ready(function(){
 
         fetch(endpoint)
         .then(function(resposta){
-            return resposta.json();
+            if (resposta.ok) {
+                return resposta.json();
+            } 
+            else {
+                throw new Error('Usuário não encontrado');
+            }
         })
 
         .then(function(json){
@@ -62,7 +67,7 @@ $(document).ready(function(){
             setTimeout(function(){
                 $(botao).find('i').removeClass('d-none');
                 $(botao).find('span').addClass('d-none');
-            }, 1000);
+            }, 0.5);                
         })
     })
 })
