@@ -5,8 +5,8 @@ function saudacao(nome) {
 }
 ;
 const seuNome = "Fabricio";
-const comprimento = saudacao(seuNome);
-console.log(comprimento);
+const cumprimento = saudacao(seuNome);
+console.log(cumprimento);
 //Função para calcular massa corporal IMC
 function calcularImc(peso, altura) {
     const imc = peso * altura;
