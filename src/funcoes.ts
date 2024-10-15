@@ -3,8 +3,8 @@ function saudacao(nome: string,): string {
     return `Olá ${nome}`;
 };
 const seuNome = "Fabricio";
-const comprimento = saudacao(seuNome);
-console.log(comprimento);
+const cumprimento = saudacao(seuNome);
+console.log(cumprimento);
 
 
 //Função para calcular massa corporal IMC
